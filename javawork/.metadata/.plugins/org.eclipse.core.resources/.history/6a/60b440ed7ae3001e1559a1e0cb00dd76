@@ -1,0 +1,24 @@
+package test0316;
+
+import java.util.Scanner;
+
+public class test0316 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("두수를 입력하시오");
+		
+		int su1 = sc.nextInt();
+		int su2 = sc.nextInt();
+		
+		System.out.println("덧셈:"+(su1+su2));
+		System.out.println("뺄셈:"+(su1-su2));
+		System.out.println("곱하기:"+(su1*su2));
+		System.out.println("나누기:"+(su1/su2));
+		System.out.println("나머지:"+(su1%su2));
+		
+		
+	}
+
+}

@@ -14,7 +14,7 @@ public class Ex6_Scanner {
 		System.out.println("영어점수는?");
 		eng = sc.nextInt();
 		// 버퍼의 엔터를 읽어서 소멸
-		sc.nextLine();
+		//sc.nextLine();
 		
 		System.out.println("이름은?");
 		name = sc.nextLine(); // 점수뒤의 엔터를 읽어온다(엔터가 버퍼에 저장되어있는상태)

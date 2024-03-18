@@ -1,0 +1,34 @@
+package test01;
+
+import java.util.Scanner;
+
+public class test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("점수를 입력");
+		int kor = sc.nextInt();
+		int eng = sc.nextInt();
+		int math = sc.nextInt();
+		int total = kor+eng+math;
+		int max;
+//		  max =  kor>eng&&kor>math
+//		  if (kor > eng) {
+//			  max = kor;
+//		  } else {
+//			  max = eng;
+//		  }
+//		  if (max > math) {
+//			  
+//		  } else {
+//			  max = math;
+//		  }
+
+		System.out.printf("kor:%d점,eng:%d점,math:%d점,평균:%3.1f점,총점:%d,큰수:%d점",kor,eng,math,(kor+eng+math)/3.0,total,max);
+		
+		
+
+	}
+
+}
