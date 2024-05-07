@@ -1,13 +1,14 @@
 package data.dto;
 
+import java.sql.Date;
+
 public class SongDto {
 	private int songnum;
 	private String genre;
 	private String songname;
 	private String singer;
-	private int songdate;
+	private String songdate;
 	private String album;
-	private String lyrics;
 	
 	public int getSongnum() {
 		return songnum;
@@ -33,10 +34,10 @@ public class SongDto {
 	public void setSinger(String singer) {
 		this.singer = singer;
 	}
-	public int getSongdate() {
+	public String getSongdate() {
 		return songdate;
 	}
-	public void setSongdate(int songdate) {
+	public void setSongdate(String songdate) {
 		this.songdate = songdate;
 	}
 	public String getAlbum() {
@@ -45,11 +46,6 @@ public class SongDto {
 	public void setAlbum(String album) {
 		this.album = album;
 	}
-	public String getLyrics() {
-		return lyrics;
-	}
-	public void setLyrics(String lyrics) {
-		this.lyrics = lyrics;
-	}
+	
 	
 }

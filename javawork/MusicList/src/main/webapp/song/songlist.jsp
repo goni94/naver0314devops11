@@ -1,3 +1,5 @@
+<%@page import="data.dto.SongDto"%>
+<%@page import="data.dao.SongDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,24 +18,31 @@
         }
     </style>
 </head>
+<%
+	request.setCharacterEncoding("utf-8");
+	String singer = request.getParameter("singer");
+	SongDao dao = new SongDao();
+	SongDto dto = dao.searchData(singer);
+%>
 <body>
 	<div style="margin: 20px;width: 300px;">
 		<form action="./mcmbinsert.jsp" method="post">
+		<%if(dto.getSongnum() != 0){%>
 			<table class="table table-bordered">
 				<tr>
-					<th width="100">봄이와도</th>
+					<th width="100"><%=dto.getSongname() %></th>
 				</tr>
 				<tr>
-					<th width="100">로이킴</th>
+					<th width="100"><%=dto.getSinger() %></th>
 				</tr>
 				<tr>
-					<th width="100">발라드</th>
+					<th width="100"><%=dto.getGenre() %></th>
 				</tr>
 				<tr>
-					<th width="100">앨범명: 봄이와도</th>
+					<th width="100">앨범명: <%=dto.getAlbum() %></th>
 				</tr>
 				<tr>
-					<th width="100">발매일: 2024.03.04.</th>
+					<th width="100">발매일: <%=dto.getSongdate() %></th>
 				</tr>
 				<tr>
 					<td colspan="1" align="center">
@@ -50,6 +59,16 @@
 			    }
 				</script>
 			</table>
+		<%}else{%>
+			<table class="table table-bordered">
+			<tr>
+			<th>
+			검색된 데이터가 없습니다.
+			</th>
+			</tr>
+			</table>
+		<%} %>
+			
 		</form>
 	</div>	
 </body>

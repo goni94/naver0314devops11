@@ -33,14 +33,14 @@
 		}
 		
 		input {
-		position: relative;
-		top: 100px;
-		left: 450px;
-		  width: 50%;
-		  border: 1px solid #bbb;
-		  border-radius: 8px;
-		  padding: 10px 12px;
-		  font-size: 14px;
+			position: relative;
+			top: 100px;
+			left: 450px;
+			width: 50%;
+			border: 1px solid #bbb;
+			border-radius: 8px;
+			padding: 10px 12px;
+			font-size: 14px;
 		}
 		
 		img {
@@ -60,20 +60,21 @@
         	
     </style>
 		</head>
+		<form action="../song/songlist.jsp" method="post">
 			<body style="background-image:url('../image/watermelon2.png'); background-size : 100%; background-repeat : no-repeat; background-position: center;">
 				<div style="margin: auto; margin-top: 300px; width: 300px;" >
 				</div>
 		<div class="search">
-			<input type="text" placeholder="검색어 입력">
+			<input type="text" name="singer" placeholder="검색어 입력">
 		</div>
 	<table>
 		<tr>
 			<td colspan="1" align="right">
-				<button type="button" class="btn btn-sm btn-warning"
-						style="width: 80px ;"
-						onclick="location.href='../song/songlist.jsp'">search</button>
+				<button type="submit" class="btn btn-sm btn-warning"
+						style="width: 80px ;">search</button>
 			</td>
 		</tr>
 	</table>
+		</form>
 </body>
 </html>
