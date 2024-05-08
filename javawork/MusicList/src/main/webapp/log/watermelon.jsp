@@ -57,6 +57,13 @@
 		left: 1460px; /* 부모 요소의 가운데 정렬 */
 		transform: translateX(-50%); /* 가로 가운데 정렬 */
 		}
+		
+		button2 {
+		position: absolute; /* 상대적인 위치 설정 */
+		top: 1px; /* 위로 20px 이동 */
+		right: 1px; /* 부모 요소의 가운데 정렬 */
+		transform: translateX(-50%); /* 가로 가운데 정렬 */
+		}
         	
     </style>
 		</head>
@@ -72,6 +79,13 @@
 			<td colspan="1" align="right">
 				<button type="submit" class="btn btn-sm btn-warning"
 						style="width: 80px ;">search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" align="right">
+				<button2 type="button" class="btn btn-sm btn-warning" 
+				style="width: 80px;"
+				onclick="location.href='../musicmember/mcmbdetail.jsp'">MyPage</button2>
 			</td>
 		</tr>
 	</table>

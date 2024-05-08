@@ -22,7 +22,7 @@
 <%
 	int member=Integer.parseInt(request.getParameter("member"));
 	McmbDao dao=new McmbDao();
-	McmbDto dto=dao.getData(member);
+	McmbDto dto=dao.mypageData(member);
 	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 %>
 <body>

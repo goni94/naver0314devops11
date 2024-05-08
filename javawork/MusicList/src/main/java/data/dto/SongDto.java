@@ -9,6 +9,7 @@ public class SongDto {
 	private String singer;
 	private String songdate;
 	private String album;
+	private String url;
 	
 	public int getSongnum() {
 		return songnum;
@@ -46,6 +47,11 @@ public class SongDto {
 	public void setAlbum(String album) {
 		this.album = album;
 	}
-	
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
 	
 }

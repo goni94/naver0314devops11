@@ -92,6 +92,7 @@ public class SongDao {
 				dto.setGenre(rs.getString("genre"));
 				dto.setAlbum(rs.getString("album"));
 				dto.setSongdate(rs.getString("songdate"));
+				dto.setUrl(rs.getString("url"));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

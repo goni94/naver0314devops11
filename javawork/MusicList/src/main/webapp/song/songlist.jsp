@@ -52,7 +52,7 @@
 				<script>
 			    function openYoutubeLink() {
 			        // 유튜브 링크를 여기에 입력하세요
-			        var youtubeLink = "https://www.youtube.com/watch?v=moVgOwYOXec"; // 예시 유튜브 링크
+			        var youtubeLink = "<%=dto.getUrl()%>"; // 예시 유튜브 링크
 			
 			        // 새 창에서 유튜브 링크 열기
 			        window.open(youtubeLink);
@@ -60,13 +60,10 @@
 				</script>
 			</table>
 		<%}else{%>
-			<table class="table table-bordered">
-			<tr>
-			<th>
-			검색된 데이터가 없습니다.
-			</th>
-			</tr>
-			</table>
+			<script>
+			alert("검색된 정보가 없습니다.")
+			history.back();
+			</script>
 		<%} %>
 			
 		</form>

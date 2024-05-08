@@ -117,7 +117,7 @@
 					
 					<button type="button" class="btn btn-outline-secondary btn-sm"
 					style="width: 80px;"
-					onclick="location.href='mcmblist.jsp'">회원목록</button>
+					onclick="location.href='./mcmblist.jsp'">회원목록</button>
 				</td>
 			</tr>
 		</table>
